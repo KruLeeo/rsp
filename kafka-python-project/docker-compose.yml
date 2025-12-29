@@ -1,0 +1,75 @@
+version: '3.7'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.0
+    container_name: zookeeper
+    hostname: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    container_name: kafka
+    hostname: kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      # Важно: используем PLAINTEXT_INTERNAL для связи внутри сети Docker
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      # PLAINTEXT - для внешнего доступа (localhost:9092), PLAINTEXT_INTERNAL - для Docker-сети (kafka:29092)
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  producer_app:
+    build:
+      context: . # Контекст - корневой каталог (для доступа к requirements.txt)
+      dockerfile: ./producer/Dockerfile
+    container_name: producer_app
+    restart: always
+    # Проброс порта HTTP API для внешнего тестирования
+    ports:
+      - "5000:5000"
+    environment:
+      KAFKA_BROKER: kafka:29092 # Внутреннее имя Docker-хоста Kafka
+      INPUT_TOPIC: input_topic
+    depends_on:
+      - kafka
+
+  consumer_app:
+  
+    build:
+      context: . # Контекст - корневой каталог
+      dockerfile: ./consumer/Dockerfile
+    container_name: consumer_app
+    restart: always
+    environment:
+      KAFKA_BROKER: kafka:29092
+      INPUT_TOPIC: input_topic
+      OUTPUT_TOPIC: output_topic
+      GROUP_ID: my-consumer-group
+    depends_on:
+      - kafka
+
+  stream_processor_app:
+    build:
+      context: . # Контекст - корневой каталог
+      dockerfile: ./stream-processor/Dockerfile
+    container_name: stream_processor_app
+    restart: always
+    environment:
+      KAFKA_BROKER: kafka:29092
+      INPUT_TOPIC: input_topic
+      OUTPUT_TOPIC: output_topic
+    depends_on:
+      - kafka

@@ -1,0 +1,349 @@
+2025-11-19 09:48:20,164 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 09:48:20,165 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 09:48:20,165 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 09:48:20,165 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 09:48:20,165 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 09:48:20,195 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 09:48:20,195 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-19 09:48:20,197 - werkzeug - INFO -  * Restarting with stat
+2025-11-19 09:48:20,436 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 09:48:20,437 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 09:48:20,437 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 09:48:20,437 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 09:48:20,437 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 09:48:20,456 - werkzeug - WARNING -  * Debugger is active!
+2025-11-19 09:48:20,461 - werkzeug - INFO -  * Debugger PIN: 818-866-829
+2025-11-19 09:52:43,332 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 09:52:43,332 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 09:52:43,333 - TurkishSeriesAPI - INFO - Путь: /series
+2025-11-19 09:52:43,333 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 09:52:43,333 - TurkishSeriesAPI - INFO - Content-Type: None
+2025-11-19 09:52:43,333 - TurkishSeriesAPI - INFO - Время: 2025-11-19 09:52:43.333713
+2025-11-19 09:52:43,333 - TurkishSeriesAPI - INFO - 🔄 Обработка запроса всех сериалов
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - DEBUG - В базе найдено 3 сериалов
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - DEBUG -  - Великолепный век (ID: 1)
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - DEBUG -  - Любовь напрокат (ID: 2)
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - DEBUG -  - Постучи в мою дверь (ID: 3)
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 09:52:43,334 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 09:52:43,335 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 09:52:43] "GET /series HTTP/1.1" 200 -
+2025-11-19 09:59:52,528 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 09:59:52,528 - TurkishSeriesAPI - INFO - Метод: PUT
+2025-11-19 09:59:52,529 - TurkishSeriesAPI - INFO - Путь: /series/1
+2025-11-19 09:59:52,529 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 09:59:52,529 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 09:59:52,529 - TurkishSeriesAPI - INFO - Время: 2025-11-19 09:59:52.529436
+2025-11-19 09:59:52,529 - TurkishSeriesAPI - INFO - ✏️ Запрос на обновление сериала ID: 1
+2025-11-19 09:59:52,529 - TurkishSeriesAPI - INFO - Получены данные для обновления: {'episodes': 100}
+2025-11-19 09:59:52,530 - TurkishSeriesAPI - INFO - ✅ Сериал обновлен: ID 1
+2025-11-19 09:59:52,530 - TurkishSeriesAPI - INFO - 📝 Изменения: {'id': 1, 'title': 'Великолепный век', 'year': 2011, 'episodes': 139, 'rating': 8.2} -> {'id': 1, 'title': 'Великолепный век', 'year': 2011, 'episodes': 100, 'rating': 8.2}
+2025-11-19 09:59:52,530 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 09:59:52,531 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 09:59:52,531 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 09:59:52,532 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 09:59:52] "PUT /series/1 HTTP/1.1" 200 -
+2025-11-19 09:59:58,939 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 09:59:58,939 - TurkishSeriesAPI - INFO - Метод: DELETE
+2025-11-19 09:59:58,939 - TurkishSeriesAPI - INFO - Путь: /series/1
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - Время: 2025-11-19 09:59:58.940325
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - 🗑️ Запрос на удаление сериала ID: 1
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - ✅ Удален сериал: 'Великолепный век' (ID: 1)
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - 📊 Осталось сериалов: 2
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 09:59:58,940 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 09:59:58,941 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 09:59:58,941 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 09:59:58] "DELETE /series/1 HTTP/1.1" 200 -
+2025-11-19 10:04:37,825 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:04:37,826 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 10:04:37,826 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 10:04:37,826 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 10:04:37,826 - TurkishSeriesAPI - INFO - ⏱️ Включено измерение времени выполнения методов
+2025-11-19 10:04:37,826 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:04:37,902 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 10:04:37,903 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-19 10:04:37,904 - werkzeug - INFO -  * Restarting with stat
+2025-11-19 10:04:38,145 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:04:38,145 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 10:04:38,145 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 10:04:38,146 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 10:04:38,146 - TurkishSeriesAPI - INFO - ⏱️ Включено измерение времени выполнения методов
+2025-11-19 10:04:38,146 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:04:38,164 - werkzeug - WARNING -  * Debugger is active!
+2025-11-19 10:04:38,168 - werkzeug - INFO -  * Debugger PIN: 818-866-829
+2025-11-19 10:04:46,594 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:04:46,594 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:04:46,595 - TurkishSeriesAPI - INFO - Путь: /series
+2025-11-19 10:04:46,595 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:04:46,595 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:04:46,595 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:04:46.595905
+2025-11-19 10:04:46,596 - TurkishSeriesAPI - INFO - 🔄 Обработка запроса всех сериалов
+2025-11-19 10:04:46,596 - TurkishSeriesAPI - DEBUG - В базе найдено 3 сериалов
+2025-11-19 10:04:46,596 - TurkishSeriesAPI - DEBUG -  - Великолепный век (ID: 1)
+2025-11-19 10:04:46,596 - TurkishSeriesAPI - DEBUG -  - Любовь напрокат (ID: 2)
+2025-11-19 10:04:46,596 - TurkishSeriesAPI - DEBUG -  - Постучи в мою дверь (ID: 3)
+2025-11-19 10:04:46,596 - TurkishSeriesAPI - INFO - ✅ Запрос всех сериалов выполнен за 0.79 мс
+2025-11-19 10:04:46,597 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:04:46,597 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:04:46,597 - TurkishSeriesAPI - INFO - Время выполнения: 2.43 мс
+2025-11-19 10:04:46,597 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:04:46,597 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:04:46] "GET /series HTTP/1.1" 200 -
+2025-11-19 10:04:59,112 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:04:59,112 - TurkishSeriesAPI - INFO - Метод: PUT
+2025-11-19 10:04:59,112 - TurkishSeriesAPI - INFO - Путь: /series/1
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:04:59.113212
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - ✏️ Запрос на обновление сериала ID: 1
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - Получены данные для обновления: {'episodes': 100}
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - ✅ Сериал обновлен за 0.31 мс: ID 1
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - 📝 Изменения: {'id': 1, 'title': 'Великолепный век', 'year': 2011, 'episodes': 139, 'rating': 8.2} -> {'id': 1, 'title': 'Великолепный век', 'year': 2011, 'episodes': 100, 'rating': 8.2}
+2025-11-19 10:04:59,113 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:04:59,114 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:04:59,114 - TurkishSeriesAPI - INFO - Время выполнения: 1.5 мс
+2025-11-19 10:04:59,114 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:04:59,114 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:04:59] "PUT /series/1 HTTP/1.1" 200 -
+2025-11-19 10:05:03,598 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:05:03,598 - TurkishSeriesAPI - INFO - Метод: DELETE
+2025-11-19 10:05:03,598 - TurkishSeriesAPI - INFO - Путь: /series/1
+2025-11-19 10:05:03,598 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:05:03,598 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:05:03.599038
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - 🗑️ Запрос на удаление сериала ID: 1
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - ✅ Удален сериал за 0.11 мс: 'Великолепный век' (ID: 1)
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - 📊 Осталось сериалов: 2
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - Время выполнения: 1.35 мс
+2025-11-19 10:05:03,599 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:05:03,600 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:05:03] "DELETE /series/1 HTTP/1.1" 200 -
+2025-11-19 10:06:32,520 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tkach\\OneDrive\\Рабочий стол\\serverPO\\lab6.py', reloading
+2025-11-19 10:06:32,546 - werkzeug - INFO -  * Restarting with stat
+2025-11-19 10:06:32,822 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:06:32,823 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 10:06:32,823 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 10:06:32,823 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 10:06:32,823 - TurkishSeriesAPI - INFO - ⏱️ Включено измерение времени выполнения методов
+2025-11-19 10:06:32,823 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:06:32,844 - werkzeug - WARNING -  * Debugger is active!
+2025-11-19 10:06:32,847 - werkzeug - INFO -  * Debugger PIN: 818-866-829
+2025-11-19 10:06:34,868 - werkzeug - INFO -  * Detected change in 'C:\\Users\\tkach\\OneDrive\\Рабочий стол\\serverPO\\lab6.py', reloading
+2025-11-19 10:06:34,894 - werkzeug - INFO -  * Restarting with stat
+2025-11-19 10:10:09,979 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:10:09,980 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 10:10:09,980 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 10:10:09,980 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 10:10:09,980 - TurkishSeriesAPI - INFO - ⏱️ Включено измерение времени выполнения методов
+2025-11-19 10:10:09,981 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:10:10,010 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 10:10:10,010 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-19 10:10:10,011 - werkzeug - INFO -  * Restarting with stat
+2025-11-19 10:10:10,248 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:10:10,248 - TurkishSeriesAPI - INFO - 🚀 ЗАПУСК СЕРВЕРА ТУРЕЦКИХ СЕРИАЛОВ
+2025-11-19 10:10:10,249 - TurkishSeriesAPI - INFO - 📊 Начальное количество сериалов: 3
+2025-11-19 10:10:10,249 - TurkishSeriesAPI - INFO - 📍 Сервер доступен по: http://localhost:5000
+2025-11-19 10:10:10,249 - TurkishSeriesAPI - INFO - ⏱️ Включено измерение времени выполнения методов
+2025-11-19 10:10:10,249 - TurkishSeriesAPI - INFO - ==================================================
+2025-11-19 10:10:10,269 - werkzeug - WARNING -  * Debugger is active!
+2025-11-19 10:10:10,272 - werkzeug - INFO -  * Debugger PIN: 818-866-829
+2025-11-19 10:10:17,172 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - INFO - Путь: /series
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:10:17.173596
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - INFO - 🔄 Обработка запроса всех сериалов
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - DEBUG - В базе найдено 3 сериалов
+2025-11-19 10:10:17,173 - TurkishSeriesAPI - DEBUG -  - Великолепный век (ID: 1)
+2025-11-19 10:10:17,174 - TurkishSeriesAPI - DEBUG -  - Любовь напрокат (ID: 2)
+2025-11-19 10:10:17,174 - TurkishSeriesAPI - DEBUG -  - Постучи в мою дверь (ID: 3)
+2025-11-19 10:10:17,174 - TurkishSeriesAPI - INFO - ✅ Запрос всех сериалов выполнен за 0.67 мс
+2025-11-19 10:10:17,174 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:10:17,174 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:10:17,174 - TurkishSeriesAPI - INFO - Время выполнения: 1.72 мс
+2025-11-19 10:10:17,175 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:10:17,175 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:10:17] "GET /series HTTP/1.1" 200 -
+2025-11-19 10:10:38,373 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:10:38,373 - TurkishSeriesAPI - INFO - Метод: PUT
+2025-11-19 10:10:38,374 - TurkishSeriesAPI - INFO - Путь: /series/1
+2025-11-19 10:10:38,374 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:10:38,374 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:10:38,374 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:10:38.374822
+2025-11-19 10:10:38,375 - TurkishSeriesAPI - INFO - ✏️ Запрос на обновление сериала ID: 1
+2025-11-19 10:10:38,375 - TurkishSeriesAPI - INFO - Получены данные для обновления: {'episodes': 100}
+2025-11-19 10:10:38,375 - TurkishSeriesAPI - INFO - ✅ Сериал обновлен за 0.56 мс: ID 1
+2025-11-19 10:10:38,375 - TurkishSeriesAPI - INFO - 📝 Изменения: {'id': 1, 'title': 'Великолепный век', 'year': 2011, 'episodes': 139, 'rating': 8.2} -> {'id': 1, 'title': 'Великолепный век', 'year': 2011, 'episodes': 100, 'rating': 8.2}
+2025-11-19 10:10:38,376 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:10:38,376 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:10:38,376 - TurkishSeriesAPI - INFO - Время выполнения: 2.41 мс
+2025-11-19 10:10:38,376 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:10:38,377 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:10:38] "PUT /series/1 HTTP/1.1" 200 -
+2025-11-19 10:10:50,341 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:10:50,341 - TurkishSeriesAPI - INFO - Метод: DELETE
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - Путь: /series/1
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:10:50.342373
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - 🗑️ Запрос на удаление сериала ID: 1
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - ✅ Удален сериал за 0.13 мс: 'Великолепный век' (ID: 1)
+2025-11-19 10:10:50,342 - TurkishSeriesAPI - INFO - 📊 Осталось сериалов: 2
+2025-11-19 10:10:50,343 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:10:50,343 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:10:50,343 - TurkishSeriesAPI - INFO - Время выполнения: 1.5 мс
+2025-11-19 10:10:50,343 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:10:50,343 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:10:50] "DELETE /series/1 HTTP/1.1" 200 -
+2025-11-19 10:12:32,504 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:12:32,504 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:12:32,504 - TurkishSeriesAPI - INFO - Путь: /1
+
+2025-11-19 10:12:32,504 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:12:32,505 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:12:32,505 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:12:32.505267
+2025-11-19 10:12:32,505 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:12:32,505 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:12:32,505 - TurkishSeriesAPI - INFO - Время выполнения: 1.29 мс
+2025-11-19 10:12:32,505 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:12:32,506 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:12:32] "[33mGET /1%0A HTTP/1.1[0m" 404 -
+2025-11-19 10:12:46,835 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:12:46,835 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:12:46,835 - TurkishSeriesAPI - INFO - Путь: /books/1
+
+2025-11-19 10:12:46,835 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:12:46,836 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:12:46,836 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:12:46.836459
+2025-11-19 10:12:46,836 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:12:46,837 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:12:46,837 - TurkishSeriesAPI - INFO - Время выполнения: 1.74 мс
+2025-11-19 10:12:46,837 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:12:46,837 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:12:46] "[33mGET /books/1%0A HTTP/1.1[0m" 404 -
+2025-11-19 10:12:48,894 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:12:48,894 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - Путь: /books/1
+
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:12:48.895445
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - Время выполнения: 1.01 мс
+2025-11-19 10:12:48,895 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:12:48,896 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:12:48] "[33mGET /books/1%0A HTTP/1.1[0m" 404 -
+2025-11-19 10:13:00,160 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:00,160 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:00,160 - TurkishSeriesAPI - INFO - Путь: /
+2025-11-19 10:13:00,161 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:00,161 - TurkishSeriesAPI - INFO - Content-Type: None
+2025-11-19 10:13:00,162 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:00.162068
+2025-11-19 10:13:00,162 - TurkishSeriesAPI - INFO - 🏠 Запрос главной страницы
+2025-11-19 10:13:00,162 - TurkishSeriesAPI - INFO - ✅ Главная страница отдана за 0.42 мс
+2025-11-19 10:13:00,163 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:00,163 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:13:00,163 - TurkishSeriesAPI - INFO - Время выполнения: 3.01 мс
+2025-11-19 10:13:00,163 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:00,163 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:00] "GET / HTTP/1.1" 200 -
+2025-11-19 10:13:00,319 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:00,319 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:00,320 - TurkishSeriesAPI - INFO - Путь: /favicon.ico
+2025-11-19 10:13:00,320 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:00,320 - TurkishSeriesAPI - INFO - Content-Type: None
+2025-11-19 10:13:00,320 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:00.320518
+2025-11-19 10:13:00,320 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:00,321 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:13:00,321 - TurkishSeriesAPI - INFO - Время выполнения: 1.62 мс
+2025-11-19 10:13:00,321 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:00,321 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-19 10:13:00,407 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:00,408 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:00,408 - TurkishSeriesAPI - INFO - Путь: /favicon.ico
+2025-11-19 10:13:00,409 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:00,409 - TurkishSeriesAPI - INFO - Content-Type: None
+2025-11-19 10:13:00,410 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:00.410012
+2025-11-19 10:13:00,410 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:00,410 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:13:00,411 - TurkishSeriesAPI - INFO - Время выполнения: 2.98 мс
+2025-11-19 10:13:00,411 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:00,411 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-19 10:13:02,157 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:02,158 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:02,159 - TurkishSeriesAPI - INFO - Путь: /
+2025-11-19 10:13:02,159 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:02,159 - TurkishSeriesAPI - INFO - Content-Type: None
+2025-11-19 10:13:02,159 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:02.159351
+2025-11-19 10:13:02,159 - TurkishSeriesAPI - INFO - 🏠 Запрос главной страницы
+2025-11-19 10:13:02,159 - TurkishSeriesAPI - INFO - ✅ Главная страница отдана за 0.26 мс
+2025-11-19 10:13:02,160 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:02,160 - TurkishSeriesAPI - INFO - Статус: 200
+2025-11-19 10:13:02,160 - TurkishSeriesAPI - INFO - Время выполнения: 2.09 мс
+2025-11-19 10:13:02,160 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:02,160 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:02] "GET / HTTP/1.1" 200 -
+2025-11-19 10:13:12,907 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:12,907 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:12,907 - TurkishSeriesAPI - INFO - Путь: /books/1
+
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:12.908216
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - Время выполнения: 1.28 мс
+2025-11-19 10:13:12,908 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:12,909 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:12] "[33mGET /books/1%0A HTTP/1.1[0m" 404 -
+2025-11-19 10:13:24,652 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:24,653 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:24,653 - TurkishSeriesAPI - INFO - Путь: /books/1
+2025-11-19 10:13:24,653 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:24,653 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:13:24,653 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:24.653817
+2025-11-19 10:13:24,654 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:24,654 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:13:24,654 - TurkishSeriesAPI - INFO - Время выполнения: 1.23 мс
+2025-11-19 10:13:24,654 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:24,655 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:24] "[33mGET /books/1 HTTP/1.1[0m" 404 -
+2025-11-19 10:13:29,346 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:29,347 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:29,347 - TurkishSeriesAPI - INFO - Путь: /books/1
+2025-11-19 10:13:29,347 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:29,347 - TurkishSeriesAPI - INFO - Content-Type: None
+2025-11-19 10:13:29,347 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:29.347699
+2025-11-19 10:13:29,347 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:29,348 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:13:29,348 - TurkishSeriesAPI - INFO - Время выполнения: 1.17 мс
+2025-11-19 10:13:29,348 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:29,348 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:29] "[33mGET /books/1 HTTP/1.1[0m" 404 -
+2025-11-19 10:13:42,307 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:13:42,307 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:13:42,307 - TurkishSeriesAPI - INFO - Путь: /books/1 
+2025-11-19 10:13:42,307 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:13:42,307 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:13:42,307 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:13:42.307974
+2025-11-19 10:13:42,308 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:13:42,308 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:13:42,308 - TurkishSeriesAPI - INFO - Время выполнения: 1.09 мс
+2025-11-19 10:13:42,308 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:13:42,308 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:13:42] "[33mGET /books/1%20 HTTP/1.1[0m" 404 -
+2025-11-19 10:14:04,342 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:14:04,342 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:14:04,342 - TurkishSeriesAPI - INFO - Путь: /books/1
+2025-11-19 10:14:04,342 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:14:04,343 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:14:04,343 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:14:04.343183
+2025-11-19 10:14:04,343 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:14:04,343 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:14:04,343 - TurkishSeriesAPI - INFO - Время выполнения: 1.04 мс
+2025-11-19 10:14:04,343 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:14:04,343 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:14:04] "[33mGET /books/1 HTTP/1.1[0m" 404 -
+2025-11-19 10:14:05,656 - TurkishSeriesAPI - INFO - === ВХОДЯЩИЙ ЗАПРОС ===
+2025-11-19 10:14:05,656 - TurkishSeriesAPI - INFO - Метод: GET
+2025-11-19 10:14:05,657 - TurkishSeriesAPI - INFO - Путь: /books/1
+2025-11-19 10:14:05,657 - TurkishSeriesAPI - INFO - IP: 127.0.0.1
+2025-11-19 10:14:05,657 - TurkishSeriesAPI - INFO - Content-Type: application/json
+2025-11-19 10:14:05,657 - TurkishSeriesAPI - INFO - Время: 2025-11-19 10:14:05.657625
+2025-11-19 10:14:05,657 - TurkishSeriesAPI - INFO - === ИСХОДЯЩИЙ ОТВЕТ ===
+2025-11-19 10:14:05,658 - TurkishSeriesAPI - INFO - Статус: 404
+2025-11-19 10:14:05,658 - TurkishSeriesAPI - INFO - Время выполнения: 1.48 мс
+2025-11-19 10:14:05,658 - TurkishSeriesAPI - INFO - ======================
+2025-11-19 10:14:05,658 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2025 10:14:05] "[33mGET /books/1 HTTP/1.1[0m" 404 -
